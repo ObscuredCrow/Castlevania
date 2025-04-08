@@ -1,0 +1,14 @@
+version: 2
+tpsheetFileNames:
+- Assets/Textures/CSprite.tpsheet
+- Assets/Textures/Frogger.tpsheet
+- Assets/Third Party/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/Textures/CSprite.png
+- Assets/Textures/Frogger.png
+- Assets/Third Party/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- Assets/Third Party/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0
