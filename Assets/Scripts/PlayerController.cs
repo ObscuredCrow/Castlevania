@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded) {
-            _rigid.velocity = new Vector2(_rigid.velocity.x, _jump);
+            _rigid.linearVelocity = new Vector2(_rigid.linearVelocity.x, _jump);
             _isGrounded = false;
         }
 
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
         _animator.SetBool("Jumping", !_isGrounded);
         _animator.SetBool("Walking", _moveVelocity != 0);
-        _rigid.velocity = new Vector2(_moveVelocity, _rigid.velocity.y);
+        _rigid.linearVelocity = new Vector2(_moveVelocity, _rigid.linearVelocity.y);
     }
 
     private void Whip() {
